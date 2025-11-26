@@ -1,0 +1,12 @@
+package co.edu.uniquindio.clinica.dto.admin;
+
+import co.edu.uniquindio.clinica.modelo.Entidades.Dia;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+import java.time.LocalTime;
+
+public record HorarioDTO(@NotNull Dia dia,
+        @NotBlank LocalTime horaInicio,
+        @NotBlank LocalTime horaSalida) {
+}

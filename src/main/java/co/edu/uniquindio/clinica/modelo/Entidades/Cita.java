@@ -34,7 +34,8 @@ public class Cita implements Serializable {
     @ManyToOne
     private EstadoCita estadoCita;
 
-    @OneToOne(mappedBy = "cita", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToOne(mappedBy = "cita", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private Atencion atencion;
 
     @ManyToOne
@@ -44,6 +45,7 @@ public class Cita implements Serializable {
     private Medico medico;
 
     @OneToMany(mappedBy = "cita")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Pqrs> pqrsList;
 
 }

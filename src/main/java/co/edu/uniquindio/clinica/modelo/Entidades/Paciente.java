@@ -31,5 +31,6 @@ public class Paciente extends Usuario implements Serializable {
     private TipoSangre tipoSangre;
 
     @OneToMany(mappedBy = "paciente")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Cita> citas;
 }

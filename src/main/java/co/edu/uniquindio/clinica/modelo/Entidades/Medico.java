@@ -28,12 +28,15 @@ public class Medico extends Usuario implements Serializable {
     private Especialidad especialidad;
 
     @OneToMany(mappedBy = "medico")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Cita> citas;
 
     @OneToMany(mappedBy = "medico")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Horario> horarios;
 
     @OneToMany(mappedBy = "medico")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<DiaLibre> diaLibres;
 
 }

@@ -21,5 +21,6 @@ public class Especialidad implements Serializable {
     private String nombre;
 
     @OneToMany(mappedBy = "especialidad")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Medico> medicos;
 }

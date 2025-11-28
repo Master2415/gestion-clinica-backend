@@ -21,5 +21,6 @@ public class EstadoPqrs implements Serializable {
     private String estado;
 
     @OneToMany(mappedBy = "estadoPqrs")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Pqrs> pqrs;
 }

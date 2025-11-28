@@ -21,5 +21,6 @@ public class EstadoCita implements Serializable {
     private String estado;
 
     @OneToMany(mappedBy = "estadoCita")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Cita> citas;
 }

@@ -19,6 +19,6 @@ public interface MedicoRepo extends JpaRepository<Medico, Integer> {
     @Query("select c from Atencion c where c.cita.medico.codigo = :codigoMedico")
     List<Atencion> consultasRealizadas(int codigoMedico);
 
-    Cuenta findByCorreo(String correo);
+    Medico findByCorreo(String correo);
 
 }

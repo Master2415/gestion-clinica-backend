@@ -1,0 +1,886 @@
+Initialized native services in: /home/douglas/.gradle/native
+Initialized jansi services in: /home/douglas/.gradle/native
+Received JVM installation metadata from '/usr/lib/jvm/java-17-openjdk-amd64': {JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, JAVA_VERSION=17.0.17, JAVA_VENDOR=Ubuntu, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.17+10-Ubuntu-124.04, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.17+10-Ubuntu-124.04, VM_VENDOR=Ubuntu, OS_ARCH=amd64}
+Found daemon DaemonInfo{pid=36190, address=[2c6ad98e-0af3-4970-9b90-e930729aacc3 port:34179, addresses:[/127.0.0.1]], state=Idle, lastBusy=1764191533931, context=DefaultDaemonContext[uid=2d85b612-0f15-4158-a431-c0320b8d985c,javaHome=/home/douglas/.antigravity/extensions/redhat.java-1.50.0-linux-x64/jre/21.0.9-linux-x86_64,daemonRegistryDir=/home/douglas/.gradle/daemon,pid=36190,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/usr/lib/jvm/java-17-openjdk-amd64,daemonRegistryDir=/home/douglas/.gradle/daemon,pid=40438,idleTimeout=null,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+Actual: DefaultDaemonContext[uid=2d85b612-0f15-4158-a431-c0320b8d985c,javaHome=/home/douglas/.antigravity/extensions/redhat.java-1.50.0-linux-x64/jre/21.0.9-linux-x86_64,daemonRegistryDir=/home/douglas/.gradle/daemon,pid=36190,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 36836). The daemon log file: /home/douglas/.gradle/daemon/8.2/daemon-36836.out.log
+Starting 5th build in daemon [uptime: 4 mins 46.438 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 18% of 384 MiB]
+Using 8 worker leases.
+Not watching /media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica since the file system is not supported
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica/settings.gradle'.
+Projects loaded. Root project using build file '/media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica/build.gradle'.
+Included projects: [root project 'clinica']
+
+> Configure project :
+Evaluating root project 'clinica' using build file '/media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica/build.gradle'.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration2 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration2 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration2 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration2 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Applying dependency management to configuration 'bootArchives' in project 'clinica'
+Applying dependency management to configuration 'archives' in project 'clinica'
+Applying dependency management to configuration 'default' in project 'clinica'
+Applying dependency management to configuration 'implementation' in project 'clinica'
+Applying dependency management to configuration 'compileOnly' in project 'clinica'
+Applying dependency management to configuration 'compileClasspath' in project 'clinica'
+Applying dependency management to configuration 'annotationProcessor' in project 'clinica'
+Applying dependency management to configuration 'runtimeOnly' in project 'clinica'
+Applying dependency management to configuration 'runtimeClasspath' in project 'clinica'
+Applying dependency management to configuration 'apiElements' in project 'clinica'
+Applying dependency management to configuration 'runtimeElements' in project 'clinica'
+Applying dependency management to configuration 'mainSourceElements' in project 'clinica'
+Applying dependency management to configuration 'testImplementation' in project 'clinica'
+Applying dependency management to configuration 'testCompileOnly' in project 'clinica'
+Applying dependency management to configuration 'testCompileClasspath' in project 'clinica'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'clinica'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'clinica'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'clinica'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'clinica'
+Applying dependency management to configuration 'developmentOnly' in project 'clinica'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'clinica'
+All projects evaluated.
+Task name matched 'test'
+Selected primary task 'test' from project :
+The configuration :mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test']
+Tasks that were excluded: []
+Resolve mutations for :compileJava (Thread[Execution worker,5,main]) started.
+:compileJava (Thread[Execution worker,5,main]) started.
+
+> Task :compileJava
+Resolving global dependency management for project 'clinica'
+The configuration :detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration2 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration2 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration2 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration2 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration2 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration2 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration3 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration3 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration3 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration3 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration3 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration3 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration4 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration4 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration4 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration4 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration4 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration4 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration5 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration5 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration5 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration5 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration5 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration5 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration6 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration6 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration6 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration6 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration6 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration6 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration7 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration7 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration7 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration7 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration7 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration7 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration8 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration8 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration8 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration8 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration8 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration8 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration9 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration9 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration9 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration9 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration9 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration9 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration10 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration10 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration10 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration10 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration10 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration10 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration11 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration11 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration11 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration11 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration11 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration11 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration12 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration12 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration12 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration12 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration12 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration12 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration13 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration13 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration13 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration13 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration13 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration13 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration14 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration14 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration14 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration14 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration14 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration14 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration15 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration15 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration15 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration15 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration15 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration15 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration16 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration16 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration16 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration16 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration16 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration16 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration17 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration17 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration17 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration17 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration17 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration17 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration18 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration18 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration18 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration18 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration18 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration18 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration19 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration19 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration19 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration19 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration19 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration19 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration20 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration20 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration20 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration20 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration20 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration20 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration21 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration21 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration21 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration21 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration21 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration21 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration22 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration22 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration22 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration22 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration22 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration22 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration23 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration23 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration23 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration23 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration23 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration23 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration24 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration24 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration24 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration24 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration24 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration24 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration25 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration25 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration25 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration25 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration25 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration25 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration26 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration26 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration26 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration26 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration26 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration26 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration27 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration27 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration27 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration27 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration27 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration27 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration28 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration28 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration28 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration28 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration28 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration28 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration29 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration29 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration29 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration29 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration29 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration29 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration30 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration30 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration30 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration30 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration30 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration30 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration31 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration31 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration31 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration31 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration31 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration31 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration32 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration32 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration32 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration32 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration32 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration32 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration33 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration33 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration33 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration33 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration33 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration33 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration34 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration34 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration34 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration34 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration34 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration34 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration35 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration35 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration35 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration35 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration35 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration35 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration36 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration36 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration36 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration36 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration36 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration36 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration37 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration37 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration37 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration37 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration37 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration37 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration38 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration38 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration38 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration38 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration38 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration38 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration39 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration39 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration39 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration39 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration39 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration39 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration40 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration40 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration40 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration40 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration40 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration40 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration41 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration41 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration41 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration41 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration41 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration41 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration42 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration42 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration42 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration42 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration42 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration42 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration43 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration43 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration43 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration43 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration43 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration43 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration44 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration44 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration44 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration44 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration44 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration44 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration45 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration45 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration45 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration45 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration45 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration45 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration46 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration46 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration46 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration46 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration46 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration46 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration47 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration47 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration47 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration47 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration47 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration47 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration48 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration48 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration48 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration48 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration48 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration48 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration49 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration49 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration49 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration49 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration49 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration49 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration50 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration50 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration50 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration50 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration51 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration51 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration51 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration51 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration52 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration52 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration52 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration52 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration52 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration52 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration53 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration53 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration53 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration53 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration53 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration53 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration54 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration54 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration54 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration54 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration54 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration54 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration55 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration55 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration55 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration55 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration55 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration55 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration56 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration56 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration56 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration56 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration56 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration56 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration57 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration57 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration57 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration57 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration57 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration57 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration58 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration58 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration58 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration58 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration58 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration58 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration59 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration59 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration59 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration59 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration59 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration59 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration60 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration60 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration60 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration60 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration60 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration60 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration61 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration61 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration61 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration61 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration61 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration61 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration62 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration62 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration62 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration62 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration62 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration62 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration63 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration63 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration63 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration63 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration63 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration63 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration64 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration64 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration64 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration64 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration64 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration64 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration65 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration65 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration65 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration65 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration65 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration65 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration66 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration66 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration66 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration66 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration66 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration66 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration67 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration67 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration67 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration67 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration67 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration67 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration68 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration68 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration68 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration68 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration68 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration68 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration69 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration69 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration69 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration69 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration69 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration69 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration70 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration70 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration70 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration70 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration70 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration70 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration71 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration71 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration71 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration71 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration71 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration71 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration72 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration72 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration72 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration72 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration72 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration72 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration73 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration73 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration73 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration73 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration73 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration73 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration74 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration74 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration74 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration74 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration74 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration74 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration75 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration75 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration75 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration75 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration75 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration75 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration76 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration76 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration76 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration76 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration76 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration76 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration77 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration77 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration77 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration77 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration77 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration77 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration78 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration78 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration78 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration78 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration78 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration78 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration79 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration79 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration79 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration79 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration79 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration79 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration80 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration80 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration80 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration80 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration80 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration80 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration81 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration81 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration81 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration81 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration81 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration81 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration82 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration82 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration82 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration82 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration82 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration82 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration83 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration83 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration83 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration83 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration83 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration83 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration84 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration84 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration84 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration84 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration84 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration84 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration85 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration85 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration85 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration85 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration85 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration85 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration86 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration86 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration86 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration86 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration86 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration86 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration87 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration87 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration87 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration87 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration87 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration87 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration88 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration88 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration88 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration88 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration88 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration88 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration89 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration89 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration89 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration89 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration89 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration89 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration90 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration90 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration90 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration90 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration90 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration90 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration91 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration91 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration91 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration91 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration91 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration91 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration92 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration92 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration92 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration92 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration92 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration92 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration93 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration93 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration93 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration93 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration93 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration93 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration94 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration94 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration94 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration94 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration94 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration94 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration95 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration95 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration95 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration95 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration95 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration95 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration96 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration96 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration96 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration96 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration96 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration96 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration97 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration97 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration97 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration97 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration97 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration97 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration98 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration98 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration98 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration98 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration98 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration98 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration99 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration99 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration99 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration99 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration99 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration99 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration100 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration100 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration100 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration100 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration100 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration100 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration101 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration101 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration101 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration101 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration101 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration101 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration102 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration102 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration102 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration102 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration102 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration102 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration103 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration103 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration103 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration103 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration103 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration103 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration104 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration104 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration104 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration104 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration104 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration104 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration105 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration105 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration105 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration105 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration105 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration105 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration106 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration106 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration106 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration106 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration106 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration106 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration107 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration107 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration107 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration107 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration107 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration107 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration108 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration108 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration108 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration108 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration108 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration108 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Excluding []
+The configuration :detachedConfiguration109 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration109 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration109 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration109 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration110 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration110 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration110 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration110 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Excluding []
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Task ':compileJava' is not up-to-date because:
+  Executed with '--rerun-tasks'.
+The input changes require a full rebuild for incremental task ':compileJava'.
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/usr/lib/jvm/java-17-openjdk-amd64'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.444 secs.
+Created classpath snapshot for incremental compilation in 0.079 secs.
+Resolve mutations for :processResources (Thread[Execution worker,5,main]) started.
+:processResources (Thread[Execution worker,5,main]) started.
+
+> Task :processResources
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+Task ':processResources' is not up-to-date because:
+  Executed with '--rerun-tasks'.
+Resolve mutations for :classes (Thread[Execution worker,5,main]) started.
+:classes (Thread[Execution worker,5,main]) started.
+
+> Task :classes
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :compileTestJava (Thread[Execution worker,5,main]) started.
+:compileTestJava (Thread[Execution worker,5,main]) started.
+
+> Task :compileTestJava
+The configuration :detachedConfiguration111 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration111 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration111 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration111 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration112 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration112 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration112 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration112 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration113 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration113 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration113 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration113 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration113 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration113 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration114 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration114 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration114 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration114 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration114 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration114 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration115 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration115 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration115 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration115 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration115 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration115 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration116 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration116 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration116 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration116 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration116 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration116 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration117 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration117 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration117 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration117 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration117 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration117 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration118 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration118 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration118 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration118 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration118 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration118 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration119 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration119 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration119 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration119 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration119 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration119 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Excluding []
+The configuration :detachedConfiguration120 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration120 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration120 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration120 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration121 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration121 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration121 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration121 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Excluding []
+Caching disabled for task ':compileTestJava' because:
+  Build cache is disabled
+Task ':compileTestJava' is not up-to-date because:
+  Executed with '--rerun-tasks'.
+The input changes require a full rebuild for incremental task ':compileTestJava'.
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/usr/lib/jvm/java-17-openjdk-amd64'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.08 secs.
+Created classpath snapshot for incremental compilation in 0.087 secs.
+Resolve mutations for :processTestResources (Thread[Execution worker,5,main]) started.
+:processTestResources (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :processTestResources
+Caching disabled for task ':processTestResources' because:
+  Build cache is disabled
+Task ':processTestResources' is not up-to-date because:
+  Executed with '--rerun-tasks'.
+Resolve mutations for :testClasses (Thread[Execution worker Thread 6,5,main]) started.
+:testClasses (Thread[Execution worker,5,main]) started.
+
+> Task :testClasses
+Skipping task ':testClasses' as it has no actions.
+Resolve mutations for :test (Thread[Execution worker,5,main]) started.
+:test (Thread[Execution worker,5,main]) started.
+
+> Task :test
+The configuration :detachedConfiguration122 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration122 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration122 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration122 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration123 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration123 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration123 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration123 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration124 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration124 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration124 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration124 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration124 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration124 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration125 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration125 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration125 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration125 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :detachedConfiguration125 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :detachedConfiguration125 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Excluding [com.google.protobuf:protobuf-java]
+Caching disabled for task ':test' because:
+  Build cache is disabled
+Task ':test' is not up-to-date because:
+  Executed with '--rerun-tasks'.
+Starting process 'Gradle Test Executor 3'. Working directory: /media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica Command: /usr/lib/jvm/java-17-openjdk-amd64/bin/java -Dorg.gradle.internal.worker.tmpdir=/media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica/build/tmp/test/work -Dorg.gradle.native=false @/home/douglas/.gradle/.tmp/gradle-worker-classpath4447218244589635905txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=CO -Duser.language=es -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 3'
+Successfully started process 'Gradle Test Executor 3'
+
+Gradle Test Executor 3 started executing tests.
+
+> Task :test
+
+GenerateHashTest > generate() STANDARD_OUT
+    Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+GenerateHashTest > generate() STANDARD_ERROR
+    HASH_GENERATED: $2a$10$3oJYc0d8Qz7zxTWnt3dzmu.WXo0hH5vZA7qbt0nBHlVnQCDd1UEC2
+
+Gradle Test Executor 3 finished executing tests.
+
+> Task :test
+Finished generating test XML results (0.007 secs) into: /media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica/build/test-results/test
+Generating HTML test report...
+Finished generating test html results (0.033 secs) into: /media/douglas/Windows-SSD/ALL/Codigos/WS_Java/proAvanzada/backend-clinica/build/reports/tests/test
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 26s
+5 actionable tasks: 5 executed
+Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.

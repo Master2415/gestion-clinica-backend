@@ -14,13 +14,13 @@ public interface PacienteRepo extends JpaRepository<Paciente, Integer> {
 
     @Query("select p from Paciente p where p.cedula = :cedula")
     Paciente buscarPorCedula(String cedula);
+
     @Query("select p from Paciente p where p.correo = :correo")
     Paciente buscarPorCorreo(String correo);
+
     @Query("select c from Atencion c where c.cita.paciente.codigo =:codigoPaciente")
     List<Atencion> buscarConsultasPaciente(int codigoPaciente);
 
-    Cuenta findByCorreo(String correo);
-
+    Paciente findByCorreo(String correo);
 
 }
-

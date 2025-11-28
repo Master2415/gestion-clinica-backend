@@ -25,38 +25,37 @@ public class AutenticacionServicioImpl implements AutenticacionServicio {
     private final AdministradorRepo administradorRepo;
     private final JWTUtils jwtUtils;
 
-
     @Override
     public TokenDTO login(LoginDTO loginDTO) throws Exception {
 
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        Cuenta cuenta = null;
 
-        //se busca en paciente
+        // Intentar buscar en paciente
+        Paciente paciente = pacienteRepo.findByCorreo(loginDTO.correo());
+        if (paciente != null) {
+            cuenta = paciente;
+        }
 
-        Optional<Cuenta> cuentaOptional = Optional.ofNullable(pacienteRepo.findByCorreo(loginDTO.correo()));
+        // Si no se encontró en paciente, buscar en médico
+        if (cuenta == null) {
+            Medico medico = medicoRepo.findByCorreo(loginDTO.correo());
+            if (medico != null) {
+                cuenta = medico;
+            }
+        }
 
-        if (cuentaOptional.isEmpty()) {
+        // Si no se encontró en médico, buscar en administrador
+        if (cuenta == null) {
+            cuenta = administradorRepo.findByCorreo(loginDTO.correo());
+        }
+
+        // Si no se encontró en ningún repositorio, lanzar excepción
+        if (cuenta == null) {
             throw new Exception("No existe el correo ingresado");
         }
 
-        //Buscarlo en medico
-
-        Optional<Cuenta> cuentaOptional1 = Optional.ofNullable(medicoRepo.findByCorreo(loginDTO.correo()));
-
-        if (cuentaOptional1.isEmpty()) {
-            throw new Exception("No existe el correo ingresado");
-        }
-
-        //Buscarlo en Amdin
-
-        Optional<Cuenta> cuentaOptional2 = Optional.ofNullable(administradorRepo.findByCorreo(loginDTO.correo()));
-
-        if (cuentaOptional2.isEmpty()) {
-            throw new Exception("No existe el correo ingresado");
-        }
-
-        Cuenta cuenta = cuentaOptional.get();
-
+        // Verificar la contraseña
         if (!passwordEncoder.matches(loginDTO.contrasenia(), cuenta.getContrasena())) {
             throw new Exception("La contraseña ingresada es incorrecta");
         }
@@ -84,6 +83,5 @@ public class AutenticacionServicioImpl implements AutenticacionServicio {
 
         return jwtUtils.generarToken(cuenta.getCorreo(), map);
     }
-
 
 }
